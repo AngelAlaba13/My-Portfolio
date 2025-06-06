@@ -1,6 +1,7 @@
 import Particles from './3rdparty-styles/Particles';
 import Header from './components/Header';
 import Home from './pages/Home';
+import Proofs from './pages/Proofs';
 import Skills from './pages/Skills';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
     </div>
       <Header/>
       <Home/>
+      <Proofs/>
       <Skills/>
       
     </>

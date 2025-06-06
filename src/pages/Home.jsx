@@ -8,7 +8,7 @@ function Home() {
         <Lanyard position={[0, 0, 24]} gravity={[0, -40, 0]} />
       </div>
 
-      <div className="relative p-20 flex justify-start items-center text-start h-[50rem]">
+      <div className="relative p-20 flex justify-start items-center text-start h-[50rem] w-max">
         <ScrambledText
           className="scrambled-text-demo"
           radius={100}
