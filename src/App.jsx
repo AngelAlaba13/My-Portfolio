@@ -1,12 +1,13 @@
-import Particles from './components/Particles';
+import Particles from './3rdparty-styles/Particles';
 import Header from './components/Header';
+import Home from './pages/Home';
+import Skills from './pages/Skills';
 
 function App() {
 
     return (
       <>
-      <Header/>
-      <div style={{ backgroundColor:'black', width: '100%', height: '100vh', position: 'fixed', overflow: 'hidden', zIndex: -1, }}>
+      <div style={{ backgroundColor:'black', width: '100%', height: '100vh', position: 'fixed', overflow: 'hidden', zIndex: -1, pointerEvents: "none"}}>
         <Particles
           particleColors={['#ffffff', '#ffffff']}
           particleCount={200}
@@ -18,6 +19,10 @@ function App() {
           disableRotation={false}
         />
     </div>
+      <Header/>
+      <Home/>
+      <Skills/>
+      
     </>
     )
 }
