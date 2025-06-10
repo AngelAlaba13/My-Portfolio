@@ -16,6 +16,7 @@ function Proofs() {
                         className="count-up-text text-[100px] font-bold text-white "
                     />
                     {/* test */}
+                    {/* why wont work */}
                 <p>programming projects</p>
                 </div>
             </div>
