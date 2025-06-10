@@ -15,6 +15,7 @@ function Proofs() {
                         duration={1}
                         className="count-up-text text-[100px] font-bold text-white "
                     />
+                    {/* test */}
                 <p>programming projects</p>
                 </div>
             </div>
