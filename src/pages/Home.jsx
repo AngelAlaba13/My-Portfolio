@@ -3,22 +3,21 @@ import ScrambledText from "../3rdparty-styles/IntroText";
 
 function Home() {
   return (
-    <div className="relative h-screen">
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-10">
+    <div className="flex flex-col min-h-screen md:block relative">
+      {/* Lanyard: block on mobile, absolute overlay on md+ */}
+      <div className="hidden md:block md:absolute md:top-0 md:left-0 md:w-full md:h-full overflow-hidden z-10">
         <Lanyard position={[0, 0, 24]} gravity={[0, -40, 0]} />
       </div>
 
-      <div className="relative p-20 flex justify-start items-center text-start h-[50rem] w-max">
-        <ScrambledText
-          className="scrambled-text-demo"
-          radius={100}
-          duration={1.2}
-          speed={0.5}
-          scrambleChars=".;,;:!@#$%^&*()_+[]{}|\\/?><`~"
-        >
-          <h1 className="font-bold text-[70px]">Angel Kyle Alaba</h1>
-          <p className=" font-medium">Aspiring <span className=" text-violet-600">Full Stack Developer</span></p>
-        </ScrambledText>
+      {/* Content: centered on mobile, left on md+ */}
+      <div className="relative flex flex-col justify-center items-center text-center min-h-[calc(100vh-16rem)] w-full px-4 md:items-start md:text-start md:min-h-screen md:justify-center">
+        <h1 className="font-bold text-[2.5rem] sm:text-[3rem] md:text-[4rem] text-white">
+          Angel Kyle Alaba
+        </h1>
+        <p className="text-white font-medium text-xl sm:text-2xl md:text-[3rem]">
+          Aspiring{" "}
+          <span className="font-bold text-violet-600">Full Stack Developer</span>
+        </p>
       </div>
     </div>
   );

@@ -19,7 +19,6 @@ function App() {
           alphaParticles={false}
           disableRotation={false}
         />
-        {/* my commits are not showing */}
     </div>
       <Header/>
       <Home/>
