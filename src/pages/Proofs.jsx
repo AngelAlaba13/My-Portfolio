@@ -1,11 +1,26 @@
+import { img } from "framer-motion/client";
 import CountUp from "../3rdparty-styles/Counting";
+import "../styles/Proofs.css";
 import React, {useRef, useState, useEffect} from "react";
+import { Link } from "react-router-dom";
+
 
 function Proofs() {
 
+    // for the counters
     const counterRef = useRef(null);
     const [inView, setInView] = useState(false);
     const [countKey, setCountkey] = useState(0);
+
+    // for the image
+    const reviews = [
+        "/reviews/Review1.png",
+        "/reviews/Review1.png",
+        "/reviews/Review1.png",
+        "/reviews/Review1.png",
+        "/reviews/Review1.png",
+        "/reviews/Review1.png",    
+    ]
 
     useEffect(() => {
         const observer = new window.IntersectionObserver(
@@ -32,10 +47,10 @@ function Proofs() {
 
     return (
         <>
-            <div className=" relative flex min-h-screen ">
+            <div className=" bg-slate-400  relative flex flex-col min-h-screen gap-32">
                 
-                <div className="bg-red-300 min-h-[calc(100vh-16rem)] w-screen flex flex-col justify-center items-center px-4">
-                    <p className=" text-white font-semibold text-[1.5rem]">Cathered up to</p>
+                <div className=" min-w-full flex flex-col justify-center items-center px-4">
+                    <p className=" text-white font-semibold text-[2rem]">Cathered up to</p>
                     <div ref={counterRef}>
                         <CountUp
                             key={inView ? countKey : "static"}
@@ -44,10 +59,49 @@ function Proofs() {
                             separator=","
                             direction="up"
                             duration={1}
-                            className="count-up-text text-white font-bold text-[2rem]"
+                            className="count-up-text text-white font-bold text-[2.5rem]"
                         />
                     </div>
-                        <p className=" text-white font-semibold text-center text-[1.5rem]"><span className=" text-violet-500 font-extrabold">Programming</span> Projects</p>
+                        <p className=" text-white font-semibold text-center text-[2rem]"><span className=" text-violet-500 font-extrabold">Programming</span> Projects</p>
+                </div>
+
+
+                <div className="flex flex-col justify-center items-center text-center">
+                    <p className="text-white font-semibold text-[1.5rem]">Helped more than</p>
+                    <div ref={counterRef}>
+                        <CountUp
+                            key={inView ? countKey : "static"}
+                            from={inView ? 0 : 200}
+                            to={200}
+                            separator=","
+                            direction="up"
+                            duration={1}
+                            className="count-up-text text-white font-bold text-[2rem] px-4"
+                        />
+                    </div>
+                    <p className="text-white font-semibold text-[1.5rem]">students as an <span className="text-violet-500 font-bold">Academic Server</span></p>
+                </div>
+
+                <div>
+                    <p className="text-white text-center font-bold text-[1.5rem] py-2">TESTEMONIALS</p>
+                    <div className="overflow-hidden w-full bg-slate-600">
+                        <div className="flex animate-marquee gap-2">
+                            {[...reviews, ...reviews].map((src, index) => (
+                                <img
+                                key={index}
+                                src={src}
+                                alt={`carousel-${index}`}
+                                className=" h-32 w-auto object-contain select-none pointer-events-none"
+                                draggable={false}
+                                />
+                            ))}
+                        </div>
+                    </div>
+                
+                        <Link to="/reviews">
+                            <p className="text-white text-center text-[0.7rem] underline">See more</p>
+                        </Link>
+                
                 </div>
             </div>
         </>

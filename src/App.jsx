@@ -1,8 +1,6 @@
+import { BrowserRouter } from 'react-router-dom';
 import Particles from './3rdparty-styles/Particles';
-import Header from './components/Header';
-import Home from './pages/Home';
-import Proofs from './pages/Proofs';
-import Skills from './pages/Skills';
+import AppRoutes from './components/Routes';
 
 function App() {
 
@@ -20,10 +18,10 @@ function App() {
           disableRotation={false}
         />
     </div>
-      <Header/>
-      <Home/>
-      <Proofs/>
-      <Skills/>
+    <BrowserRouter>
+      <AppRoutes/>
+    </BrowserRouter>
+
       
     </>
     )
