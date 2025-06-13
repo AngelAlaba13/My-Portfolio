@@ -3,6 +3,7 @@ import Home from "../pages/Home";
 import Proofs from "../pages/Proofs";
 import Skills from "../pages/Skills";
 import Header from "../components/Header";
+import Contact from "../pages/Contact";
 import Testemonies from "../pages/reviews/Testemonies";
 
 function MainPage(){
@@ -12,6 +13,7 @@ function MainPage(){
             <Home/>
             <Proofs/>
             <Skills/>
+            <Contact/>
         </>
     );
 }

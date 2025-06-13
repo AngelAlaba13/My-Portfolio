@@ -49,7 +49,7 @@ function Proofs() {
         <>
             <div className=" relative flex flex-col min-h-screen gap-32">
                 
-                <div className=" min-w-full flex flex-col justify-center items-center px-4">
+                <div className=" min-w-full flex flex-col justify-center items-center px-5">
                     <p className=" text-white font-semibold text-[2rem]">Cathered up to</p>
                     <div ref={counterRef}>
                         <CountUp
