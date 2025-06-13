@@ -17,11 +17,24 @@ function Skills(){
         {src: "https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white", alt: "C++"},
         {src: "https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white", alt: "CSS"},
         {src: "https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white", alt: "HTML"},
-        {src: "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E", alt: "Javascript"},
+        {src: "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E", alt: "Javascript"},    
+    ]
 
-        
+    const databasesAndOthers = [
+        {src: "https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white", alt: "MySQL"},
+        {src: "https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white", alt: "Microsoft SQL"},
+        {src: "https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white", alt: "SQLite"},
+        {src: "https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white", alt: "Github Pages"},
+        {src: "https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7", alt: "Netlify"},
+        {src: "https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white", alt: "Vercel"},
+        {src: "https://img.shields.io/badge/Kali-268BEE?style=for-the-badge&logo=kalilinux&logoColor=white", alt: "Kali"},
+        {src: "https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white", alt: "Git"},   
+    ]
 
-         
+    const design = [
+        {src: "https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white", alt: "Figma"}, 
+        {src: "https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=white", alt: "Photoshop"},
+        {src: "https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white", alt: "Canva"}, 
     ]
 
     return(
@@ -35,33 +48,33 @@ function Skills(){
                     transition={{ type: "spring", stiffness: 100, damping: 50, duration: 0.10 }}
                     >
                      <p className="text-white text-center font-bold text-[2rem]">My Skills</p>
-                     <div className="flex flex-row justify-evenly items-center text-[1.2rem] gap-7 mx-20">
-                        <div className="">
-                            <p className="text-white font-semibold text-start pt-16 pb-5 mx-10">Languages</p>
-                            <div className="bg-white flex flex-row flex-wrap justify-center items-center gap-3 py-10 my-0 bg-opacity-10 rounded-2xl border-2 border-violet-400/50">
-                                {progLanguages.map((img, index) => (
-                                    <img key={index} src={img.src} alt={img.alt} className=" h-10 w-28 rounded-xl"/>
-                                ))}
+                     <div className="flex flex-col justify-evenly items-center text-[1.2rem] mx-5 ">
+                            <div className="">
+                                <p className="text-white font-semibold text-start pt-10 pb-2">Languages</p>
+                                <div className="bg-white flex flex-row flex-wrap justify-between items-center gap-2 p-5 bg-opacity-10 rounded-2xl border-2 border-violet-400/50">
+                                    {progLanguages.map((img, index) => (
+                                        <img key={index} src={img.src} alt={img.alt} className=" h-8 w-24 rounded-sm"/>
+                                    ))}
+                                </div>
                             </div>
-                        </div>
 
-                        <div className="">
-                            <p className="text-white font-semibold text-start pt-16 pb-5 mx-10">Databases and Stuff</p>
-                            <div className="bg-white flex flex-row flex-wrap justify-center items-center gap-3 py-10 my-0 bg-opacity-10 rounded-2xl border-2 border-violet-400/50">
-                                {progLanguages.map((img, index) => (
-                                    <img key={index} src={img.src} alt={img.alt} className=" h-10 w-28 rounded-xl"/>
-                                ))}
+                            <div className="">
+                                <p className="text-white font-semibold text-start pt-10 pb-2">Database and Others</p>
+                                <div className="bg-white flex flex-row flex-wrap justify-center items-center gap-2 p-5 bg-opacity-10 rounded-2xl border-2 border-violet-400/50">
+                                    {databasesAndOthers.map((img, index) => (
+                                        <img key={index} src={img.src} alt={img.alt} className=" h-8 w-24 rounded-sm"/>
+                                    ))}
+                                </div>
                             </div>
-                        </div>
 
-                        <div className="">
-                            <p className="text-white font-semibold text-start pt-16 pb-5 mx-10">Design</p>
-                            <div className="bg-white flex flex-row flex-wrap justify-center items-center gap-3 py-10 my-0 bg-opacity-10 rounded-2xl border-2 border-violet-400/50">
-                                {progLanguages.map((img, index) => (
-                                    <img key={index} src={img.src} alt={img.alt} className=" h-10 w-28 rounded-xl"/>
-                                ))}
+                            <div className="">
+                                <p className="text-white font-semibold text-start pt-10 pb-2">Design</p>
+                                <div className="bg-white flex flex-row flex-wrap justify-between items-center gap-2 p-5 bg-opacity-10 rounded-2xl border-2 border-violet-400/50">
+                                    {design.map((img, index) => (
+                                        <img key={index} src={img.src} alt={img.alt} className=" h-8 w-24 rounded-sm"/>
+                                    ))}
+                                </div>
                             </div>
-                        </div>
 
                      </div>
 

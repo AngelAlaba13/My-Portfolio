@@ -83,25 +83,24 @@ function Proofs() {
                 </div>
 
                 <div>
-                    <p className="text-white text-center font-bold text-[1.5rem] py-2">TESTEMONIALS</p>
-                    <div className="overflow-hidden w-full bg-slate-600">
+                    <p className="text-white text-center font-bold text-[1.5rem] py-4">TESTEMONIALS</p>
+                    <div className="overflow-hidden w-full border-2 border-violet-400/90 py-5">
                         <div className="flex animate-marquee gap-2">
                             {[...reviews, ...reviews].map((src, index) => (
                                 <img
                                 key={index}
                                 src={src}
                                 alt={`carousel-${index}`}
-                                className=" h-32 w-auto object-contain select-none pointer-events-none"
+                                className=" h-44 w-auto object-contain select-none pointer-events-none"
                                 draggable={false}
                                 />
                             ))}
                         </div>
-                    </div>
-                
+
                         <Link to="/reviews">
-                            <p className="text-white text-center text-[0.7rem] underline">See more</p>
+                            <p className="text-white text-center text-[0.90rem] underline">See more</p>
                         </Link>
-                
+                    </div>
                 </div>
             </div>
         </>
