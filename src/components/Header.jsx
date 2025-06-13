@@ -1,6 +1,14 @@
+import { a, label } from "framer-motion/client";
 import React, { useState, useEffect, useRef } from "react";
 
 function Header() {
+  const headerNav = [
+    { label: "Home", href: "/"},
+    { label: "Gallery", href: "/"},
+    { label: "My Works", href: "/"},
+  ]
+
+
   const [show, setShow] = useState(true);
   const lastScrollY = useRef(0);
 
@@ -31,6 +39,12 @@ function Header() {
       <div className="container text-xl font-bold">
         MySiteName
       </div>
+
+      <nav>
+        {headerNav.map(link => (
+          <a key={link.href} href={link.href}></a>
+        ))}
+      </nav>
     </header>
   );
 }

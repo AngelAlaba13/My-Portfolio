@@ -14,9 +14,9 @@ function Home() {
         <h1 className="font-bold text-[2.5rem] sm:text-[3rem] md:text-[4rem] text-white">
           Angel Kyle Alaba
         </h1>
-        <p className="text-white font-medium text-xl sm:text-2xl md:text-[3rem]">
+        <p className="text-white font-medium text-[2rem] sm:text-2xl md:text-[3rem]">
           Aspiring{" "}
-          <span className="font-bold text-violet-600">Full Stack Developer</span>
+          <span className="font-bold text-violet-600 text-[2rem]">Full Stack Developer</span>
         </p>
       </div>
     </div>
