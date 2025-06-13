@@ -23,7 +23,7 @@ function Contact(){
             <div className="min-w-full mb-16">
                 <div className="flex flex-col">
                     <p className="text-white text-center font-bold text-[2rem] pb-20">Reach Me</p>
-                    <p className="text-white text-[1.5rem] font-semibold pb-5">Let me know you are here</p>
+                    <p className="text-white text-[1.2rem] font-semibold pb-5">Let me know you are here</p>
                     <textarea className=" h-48 rounded-lg p-4" name="emailContent" id="emailContent" placeholder="Type your email here..." value={message} onChange={e => setMessage(e.target.value)}/>
                 </div>
                 <div className="flex justify-end my-2">
@@ -38,35 +38,35 @@ function Contact(){
                 <a href="" target="_blank" rel="noopener noreferrer">
                     <div className="text-white flex flex-row justify-start items-center gap-2">
                         <FaFacebook size="30"/>
-                        <p className="text-[1.2rem]">Facebook</p>
+                        <p className="text-[1rem]">Facebook</p>
                     </div>
                 </a>
 
                 <a href="" target="_blank" rel="noopener noreferrer">
                     <div className="text-white flex flex-row justify-start items-center gap-2">
                         <FaGithub color="white" size="30"/>
-                        <p className="text-[1.2rem]">Github</p>
+                        <p className="text-[1rem]">Github</p>
                     </div>
                 </a>
 
                 <a href="" target="_blank" rel="noopener noreferrer">
                     <div className="text-white flex flex-row justify-start items-center gap-2">
-                         <MdEmail size="30"/>
-                        <p className="text-[1.2rem]">Gmail</p>
+                        <MdEmail size="30"/>
+                        <p className="text-[1rem]">Gmail</p>
                     </div>
                 </a>
 
                 <a href="" target="_blank" rel="noopener noreferrer">
                     <div className="text-white flex flex-row justify-start items-center gap-2">
-                         <FaDiscord size="30"/>
-                        <p className="text-[1.2rem]">Discord</p>
+                        <FaDiscord size="30"/>
+                        <p className="text-[1rem]">Discord</p>
                     </div>
                 </a>
 
                 <a href="" target="_blank" rel="noopener noreferrer">
                     <div className="text-white flex flex-row justify-start items-center gap-2">
-                         <FaTiktok size="30"/>
-                        <p className="text-[1.2rem]">Tiktok</p>
+                        <FaTiktok size="30"/>
+                        <p className="text-[1rem]">Tiktok</p>
                     </div>
                 </a>
             </div>

@@ -97,7 +97,7 @@ function Proofs() {
                             ))}
                         </div>
 
-                        <Link to="/reviews">
+                        <Link to="/reviews/Testemonies">
                             <p className="text-white text-center text-[1rem] underline">See more</p>
                         </Link>
                     </div>

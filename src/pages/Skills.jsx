@@ -50,7 +50,7 @@ function Skills(){
                      <p className="text-white text-center font-bold text-[2rem]">My Skills</p>
                      <div className="flex flex-col justify-evenly items-center text-[1.2rem] mx-5 ">
                             <div className="">
-                                <p className="text-white font-semibold text-[1.5rem] pt-10 pb-2">Languages</p>
+                                <p className="text-white font-semibold text-[1.2rem] pt-10 pb-2">Languages</p>
                                 <div className="bg-white flex flex-row flex-wrap justify-between items-center gap-2 p-5 bg-opacity-10 rounded-2xl border-2 border-violet-400/50">
                                     {progLanguages.map((img, index) => (
                                         <img key={index} src={img.src} alt={img.alt} className=" h-8 w-24 rounded-sm"/>
@@ -59,7 +59,7 @@ function Skills(){
                             </div>
 
                             <div className="">
-                                <p className="text-white font-semibold text-[1.5rem] pt-10 pb-2">Database and Others</p>
+                                <p className="text-white font-semibold text-[1.2rem] pt-10 pb-2">Database and Others</p>
                                 <div className="bg-white flex flex-row flex-wrap justify-center items-center gap-2 p-5 bg-opacity-10 rounded-2xl border-2 border-violet-400/50">
                                     {databasesAndOthers.map((img, index) => (
                                         <img key={index} src={img.src} alt={img.alt} className=" h-8 w-24 rounded-sm"/>
@@ -68,7 +68,7 @@ function Skills(){
                             </div>
 
                             <div className="">
-                                <p className="text-white font-semibold text-[1.5rem] pt-10 pb-2">Design</p>
+                                <p className="text-white font-semibold text-[1.2rem] pt-10 pb-2">Design</p>
                                 <div className="bg-white flex flex-row flex-wrap justify-between items-center gap-2 p-5 bg-opacity-10 rounded-2xl border-2 border-violet-400/50">
                                     {design.map((img, index) => (
                                         <img key={index} src={img.src} alt={img.alt} className=" h-8 w-24 rounded-sm"/>
